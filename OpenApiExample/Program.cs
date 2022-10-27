@@ -49,6 +49,7 @@ app.UseSwagger();
 app.UseSwaggerUI(
     options =>
     {
+        options.RoutePrefix = string.Empty;
         var descriptions = app.DescribeApiVersions();
 
         // build a swagger endpoint for each discovered API version
