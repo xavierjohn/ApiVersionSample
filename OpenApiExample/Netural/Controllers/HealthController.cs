@@ -6,9 +6,10 @@ using System.Collections.Generic;
 using System;
 
 /// <summary>
-/// Is netural API should show up with all versions.
+/// Netural API controller hidden from OpenApi UI.
 /// </summary>
 [ApiVersionNeutral]
+[ApiExplorerSettings(IgnoreApi = true)]
 [Route("api/[controller]")]
 public class HealthController : ControllerBase
 {
