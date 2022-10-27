@@ -6,7 +6,7 @@
 
  <ItemGroup>
   <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="6.1.0" />
-  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0-*" />
+  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
  </ItemGroup>
 
 </Project>
