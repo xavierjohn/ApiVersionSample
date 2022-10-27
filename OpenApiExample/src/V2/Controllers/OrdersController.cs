@@ -9,7 +9,7 @@ using static Microsoft.AspNetCore.Http.StatusCodes;
 /// Represents a RESTful service of orders.
 /// </summary>
 [ApiVersion("2022-10-01")]
-[Route("api/[controller]")]
+[Route("[controller]")]
 public class OrdersController : ControllerBase
 {
     /// <summary>

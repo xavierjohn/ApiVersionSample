@@ -9,7 +9,7 @@ using System.Collections.Generic;
 /// Represents a RESTful service of orders.
 /// </summary>
 [ApiVersion(3.0)]
-[Route("api/[controller]")]
+[Route("[controller]")]
 public class OrdersController : ControllerBase
 {
     /// <summary>

@@ -65,3 +65,8 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
+
+/// <summary>
+/// Program file
+/// </summary>
+public partial class Program { }

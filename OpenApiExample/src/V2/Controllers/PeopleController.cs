@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 /// Represents a RESTful people service.
 /// </summary>
 [ApiVersion("2022-10-01")]
-[Route("api/v{version:apiVersion}/[controller]")]
+[Route("v{version:apiVersion}/[controller]")]
 public class PeopleController : ControllerBase
 {
     /// <summary>

@@ -10,7 +10,7 @@ using System;
 /// </summary>
 [ApiVersionNeutral]
 [ApiExplorerSettings(IgnoreApi = true)]
-[Route("api/[controller]")]
+[Route("[controller]")]
 public class HealthController : ControllerBase
 {
     /// <summary>

@@ -8,7 +8,7 @@ using Asp.Versioning;
 /// Represents a RESTful people service.
 /// </summary>
 [ApiVersion(3.0)]
-[Route("api/v{version:apiVersion}/[controller]")]
+[Route("v{version:apiVersion}/[controller]")]
 public class PeopleController : ControllerBase
 {
     /// <summary>
