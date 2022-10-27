@@ -14,10 +14,10 @@ using System;
 public class HealthController : ControllerBase
 {
     /// <summary>
-    /// Retrieves all orders.
+    /// Check service is running.
     /// </summary>
-    /// <returns>All available orders.</returns>
-    /// <response code="200">Orders successfully retrieved.</response>
+    /// <returns>I am up and running.</returns>
+    /// <response code="200"></response>
     [HttpGet]
     [Produces("application/json")]
     [ProducesResponseType(typeof(string), 200)]
