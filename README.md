@@ -11,6 +11,7 @@ are not surprised in the future when properties are added/removed or renamed in 
 3) Avoid using version as part of the URL because it violates the RESTful principles of URI.
 
 Sample layout:
+
   ![Folder Layout](assets/folderlayout.jpg "Folder Layout")
 
 ## Adding API Versioning to your application
@@ -65,13 +66,13 @@ Copy the following two files and updated as needed.
 * [ConfigureSwaggerOptions.cs](src/ApiVersioningSample/ConfigureSwaggerOptions.cs) - Needed to generate the OpenAPI document for each version.
 * [SwaggerDefaultValues.cs](src/ApiVersioningSample/SwaggerDefaultValues.cs) - Needed to add API version to the query string for each API call.
 
-#### Add SwaggerGenOptions to the service collection
+#### Add `SwaggerGenOptions` to the service collection
 
 ```csharp
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
 ```
 
-#### Add SwaggerGen to the service collection
+#### `AddSwaggerGen` to the service collection
 
 ```csharp
 builder.Services.AddSwaggerGen(
