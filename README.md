@@ -5,8 +5,8 @@ You can view the hosted sample at [https://openapiversionsample.azurewebsites.ne
 There are four parts to incorporate API versioning into your application
 but before we get into that, let's talk about a few API versioning guidelines.
 
-1) Have Request and Response object per API version. This is the ensure that clients
-are not surprised in the future when properties are added/removed or renamed in the response object.
+1) Have a resource object per API version. This is the ensure that clients
+are not surprised in the future when properties are added/removed or renamed.
 2) Prefer passing version information in the request header or query string.
 3) Avoid using version as part of the URL because it violates the RESTful principles of URI.
 
