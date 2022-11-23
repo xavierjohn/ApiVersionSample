@@ -64,7 +64,13 @@ or
 Copy the following two files and updated as needed.
 
 * [ConfigureSwaggerOptions.cs](src/ApiVersioningSample/ConfigureSwaggerOptions.cs) - Needed to generate the OpenAPI document for each version.
-* [SwaggerDefaultValues.cs](src/ApiVersioningSample/SwaggerDefaultValues.cs) - Needed to add API version to the query string for each API call.
+* [SwaggerDefaultValues.cs](src/ApiVersioningSample/SwaggerDefaultValues.cs) - is desired to 
+  * Add API version to the query string because Swashbuckle does not support it.
+  * Have a way to connect a deprecated API because it is not in the API explorer model.
+  * Honor ApiDescription.Parameters[#].Description when present. It only uses XML comments which may not exist for the API version parameter.
+
+  * Honor ApiDescription.Parameters[#].DefaultValue when present, which is useful to set so a user doesn't have to enter an API Version.
+
 
 #### Add `SwaggerGenOptions` to the service collection
 
