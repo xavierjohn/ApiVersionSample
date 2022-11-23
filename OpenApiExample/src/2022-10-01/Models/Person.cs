@@ -1,4 +1,4 @@
-﻿namespace AspVersioning.Examples.V2.Models;
+﻿namespace AspVersioning.Examples._2022_10_01.Models;
 
 using System.ComponentModel.DataAnnotations;
 
