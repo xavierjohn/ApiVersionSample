@@ -13,6 +13,26 @@ using Microsoft.AspNetCore.Mvc;
 public class OrdersController : ControllerBase
 {
     /// <summary>
+    /// Retrieves all orders.
+    /// </summary>
+    /// <returns>All available orders.</returns>
+    /// <response code="200">The successfully retrieved orders.</response>
+    [HttpGet]
+    [Produces("application/json")]
+    [ProducesResponseType(typeof(IEnumerable<Order>), 200)]
+    public IActionResult Get()
+    {
+        var orders = new Order[]
+        {
+            new(){ Id = 1, Customer = "John Doe" },
+            new(){ Id = 2, Customer = "Bob Smith" },
+            new(){ Id = 3, Customer = "Jane Doe" },
+        };
+
+        return Ok(orders);
+    }
+
+    /// <summary>
     /// Gets a single order.
     /// </summary>
     /// <param name="id">The requested order identifier.</param>

@@ -41,7 +41,7 @@ public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>
         {
             Title = "Example API",
             Version = description.ApiVersion.ToString(),
-            Contact = new OpenApiContact() { Name = "Bill Mei", Email = "bill.mei@somewhere.com" },
+            Contact = new OpenApiContact() { Name = "Xavier John", Email = "xavier@somewhere.com" },
             License = new OpenApiLicense() { Name = "MIT", Url = new Uri("https://opensource.org/licenses/MIT") }
         };
 

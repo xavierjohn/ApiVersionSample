@@ -1,6 +1,6 @@
-﻿namespace AspVersioning.Examples.V2.Controllers;
+﻿namespace AspVersioning.Examples._2022_10_01.Controllers;
 
-using AspVersioning.Examples.V2.Models;
+using AspVersioning.Examples._2022_10_01.Models;
 using Asp.Versioning;
 using Microsoft.AspNetCore.Mvc;
 
