@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System;
 
 /// <summary>
-/// Netural API controller hidden from OpenApi UI.
+/// Neutral API controller hidden from OpenApi UI.
 /// </summary>
 [ApiVersionNeutral]
 [ApiExplorerSettings(IgnoreApi = true)]
