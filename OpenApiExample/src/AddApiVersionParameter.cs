@@ -11,7 +11,7 @@ using System.Text.Json;
 /// </summary>
 /// <remarks>This <see cref="IOperationFilter"/> is only required due to bugs in the <see cref="SwaggerGenerator"/>.
 /// Once they are fixed and published, this class can be removed.</remarks>
-public class SwaggerDefaultValues : IOperationFilter
+public class AddApiVersionParameter : IOperationFilter
 {
     /// <inheritdoc />
     public void Apply(OpenApiOperation operation, OperationFilterContext context)

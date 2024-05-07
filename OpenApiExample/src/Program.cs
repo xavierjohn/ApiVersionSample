@@ -32,7 +32,7 @@ builder.Services.AddSwaggerGen(
     options =>
     {
         // add a custom operation filter which sets default values
-        options.OperationFilter<SwaggerDefaultValues>();
+        options.OperationFilter<AddApiVersionParameter>();
 
         var fileName = typeof(Program).Assembly.GetName().Name + ".xml";
         var filePath = Path.Combine(AppContext.BaseDirectory, fileName);
